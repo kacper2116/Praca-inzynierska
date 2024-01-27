@@ -1,0 +1,22 @@
+.Container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 50px;
+    width: 80%;
+}
+.SectionTitle{
+    font-size: 32px;
+    color: black;
+    margin: 40px 0;
+}
+
+.Products{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap:2rem;
+    
+}
+
+

@@ -1,0 +1,265 @@
+.Container {
+
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: var(--color3);
+    border-radius: 0.5rem;
+    color: var(--color1);
+    width: 70vw;
+    font-size: 1.4rem;
+}
+
+.Wrapper {
+    display: flex;
+}
+
+.Cart {
+    width: 65%;
+    margin-right: 2%;
+    box-sizing: border-box;
+
+}
+
+.Cart h2 {
+    text-align: center;
+}
+
+.Info_Properties {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    margin: 2rem 0;
+    font-weight: 600;
+}
+
+.Info_Properties>span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Product {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    margin: 2rem 0;
+    height: 150px;
+    position: relative;
+
+    border: 0.1rem solid var(--color1);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.Product>div {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+
+.Product img {
+
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.Product_Quantity>span {
+    border: 0.2rem solid var(--color1);
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    margin: 0 1rem;
+}
+
+
+.Product_Quantity_Button {
+    cursor: pointer;
+}
+
+
+
+.Prouduct_TotalPrice {}
+
+.Product:hover .RemoveFromCartButton {
+    display: block;
+    opacity: 1;
+}
+
+.RemoveFromCartButton {
+
+    opacity: 0;
+    transition: opacity 0.4s ease;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 1.3rem;
+
+    &:hover {
+        color: rgb(206, 41, 41);
+    }
+
+}
+
+
+
+
+
+
+.Summary {
+    /* background-color: rgb(119, 119, 119); */
+    box-sizing: border-box;
+    border: 0.1rem solid var(--color1);
+    border-radius: 0.5rem;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Summary>* {
+    margin: 0.5rem 0;
+}
+
+.CheckoutButton {
+    padding: 0.7rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    background-color: var(--color2);
+    color: var(--color1);
+    border: none;
+    min-width: 70%;
+    cursor: pointer;
+}
+
+.Summary_Info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.Summary_Info>* {
+    margin: 0 1rem;
+}
+
+.Summary_Info>h2 {
+    font-size: 1.5rem;
+}
+
+.Discount {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+
+.Discount>* {
+    margin: 0.5rem 0;
+
+}
+
+.DiscountWrapper {
+    display: flex;
+    width: 50%;
+}
+
+.DiscountWrapper>input {
+   width: 70%;
+   font-size: 1rem;
+   padding:0.7rem;
+}
+
+.DiscountButton {
+
+    font-size: 1rem;
+    padding:0.7rem;
+    font-weight: 700;
+    width: 30%;
+    background-color: var(--color2);
+    color: var(--color1);
+    border: none;
+    cursor: pointer;
+
+}
+
+
+.Guest_Panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+
+}
+
+.Guest_Panel span {
+
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0.5rem 0;
+
+}
+
+.Guest_Panel input {
+
+    display: flex;
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.7rem;
+    box-sizing: border-box;
+    border: none;
+}
+
+.Guest_Panel form {
+    width: 100%;
+}
+
+.Guest_Panel button {
+    background: var(--color2);
+    color: var(--color1);
+    border-radius: 0.5rem;
+    border: 0;
+    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: block;
+    transition: all 0.2s ease;
+    box-shadow: 0px 4px 5.5px 0px rgba(0, 0, 0, 0.07);
+    width: 100%;
+    margin: 2rem 0 1rem 0;
+}
+
+.Guest_Panel .Login_Link {
+
+    cursor: pointer;
+    color: var(--color2);
+ 
+    &:hover {
+        text-decoration: underline;
+    }
+
+
+}
+
+.Payment_Container {
+    width: 100%;
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.Payment {
+    padding: 1rem;
+}

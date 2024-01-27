@@ -1,0 +1,63 @@
+
+.Container{
+    
+    width: 17rem;
+    height: 26rem;
+
+    min-width: 10rem;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    cursor: pointer; 
+    margin: 0;
+    padding: 0;
+
+
+    overflow: hidden;
+
+ 
+    &:hover{
+        opacity: 0.9;
+    }
+}
+
+.Img{
+   display: flex;
+   flex: 3; 
+   background-size:cover;
+  
+
+}
+
+.Info{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(82, 82, 82);
+    text-align: center;
+    color: aliceblue;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 500;
+}
+
+.Info__Title{
+    display: flex;
+    font-size: 1.2rem;
+    flex: 1;
+    align-items: center;
+    justify-content:center;
+    overflow: hidden;
+    
+}
+
+.Info__Price{
+    font-size: 1.5rem;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    overflow: hidden;
+
+}

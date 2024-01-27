@@ -1,0 +1,11 @@
+.Container{
+    width: 80vw;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+    border: 2px solid black;
+
+    width: 80vw;
+    margin: auto;
+}

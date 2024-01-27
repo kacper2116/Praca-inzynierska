@@ -1,0 +1,250 @@
+.Overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999; 
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.Container{
+  display: flex;
+  width: 70%;
+  margin:3rem 0 5rem 0;
+  box-sizing: border-box;
+
+}
+
+.Left {
+  display: flex;
+  flex: 2;
+  align-items: center;
+  justify-content: left;
+ 
+
+}
+
+.Logo {
+  
+  width: 80%;
+  cursor: pointer;
+}
+
+
+.SearchContainer{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin:0 2rem;
+  width: 100%;
+}
+
+.SearchBar{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  padding: 1rem;
+
+ 
+}
+
+.SearchInput{
+  border: none;
+  background-color: var(--color1);
+  width: 100%;
+  font-size: 1.6rem;
+  margin: 0 1rem;
+
+  &:focus{
+    outline: none;
+  }
+
+  &:not(:placeholder-shown)~.ClearButton{
+    visibility: inherit;
+}
+  
+}
+
+
+.SearchResults{
+
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  box-sizing: border-box;
+
+  border: 1px solid black;
+  border-top: none;
+  background-color: var(--color1);
+
+}
+
+.SearchResults > div{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3%;
+  box-sizing: border-box;
+ 
+  padding-bottom: 1rem;
+ 
+}
+
+.SearchResults > div:not(.SearchResultsSummary):not(.NoResults){
+
+  cursor: pointer;
+
+
+  &:hover{
+    background-color: var(--color3)
+  }
+
+  border-bottom: 2px solid var(--color3);
+}
+
+.SearchResults > div >img{
+  width: 100px;
+  height: 120px;
+  object-fit: cover;
+ 
+}
+
+.SearchResults > div > * {
+  margin-right: 1rem;
+}
+
+
+.SearchResultsSummary{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.SeeMoreButton{
+  width: 30%;
+  font-size: 1rem;
+  font-weight:500 ;
+  margin: 1rem 0;
+  background-color: var(--color3);
+  color: var(--color1);
+  padding: 0.5rem;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  border: none;
+
+  &:hover{
+    color: var(--color2);
+  }
+
+
+}
+
+
+
+.LangContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  
+}
+
+.Lang {
+  font-size: 1.5rem;
+  margin-left: 0.3rem;
+}
+
+.Flag{
+  height: 1.5rem;
+  width:  1.5rem;
+  border-radius: 50%;
+  border: 1px solid black;
+  background:linear-gradient(white 50%, red 50%);
+  align-self: center;
+}
+
+.Right{
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: right;
+
+  
+}
+
+.Login, .Register{
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1.3rem;
+  
+
+  &:hover{
+    color: #767ebe;
+  }
+}
+
+
+
+.ClearButton{
+    visibility:hidden;
+    cursor: pointer;
+    opacity: 0.5;
+
+    &:hover{
+        opacity: 1;
+    }
+}
+
+.UserPanel{
+  padding: 2rem;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+
+.UserPanel > div:first-child{
+  &:hover{
+    color: var(--color2);
+  }
+
+}
+
+.User_dropdown_menu{
+  position: absolute;
+  z-index: 1;
+
+}
+
+.User_dropdown_menu > div {
+
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  margin-top: 1rem;
+
+
+  &:hover{
+    color: var(--color2);
+  }
+}
+
+.Cart_Badge{
+  &:hover{
+    color: var(--color2);
+  }
+}
+
+
+
+

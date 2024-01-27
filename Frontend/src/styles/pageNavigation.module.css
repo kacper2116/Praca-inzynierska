@@ -1,0 +1,38 @@
+.Container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+
+}
+
+.Container span {
+
+    color: var(--color3);
+    font-size: 1.5rem;
+}
+
+.Arrow{
+
+    margin: 1rem 3rem;
+    color: var(--color3);
+
+    cursor: pointer;
+
+    &:hover{
+        color: var(--color2);
+    }
+
+}
+
+
+.Arrow_Disabled{
+
+    margin: 1rem 3rem;
+    color: var(--color3);
+    opacity: 0.5;
+    
+    cursor: not-allowed;
+}

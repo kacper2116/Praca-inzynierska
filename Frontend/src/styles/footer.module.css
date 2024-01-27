@@ -1,0 +1,45 @@
+.Container{
+    background-color: rgb(52, 52, 52);
+    color: var(--color1);
+    padding: 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:var(--color1);  
+
+    margin-top: auto;
+}
+
+.Wrapper{
+    display: flex;
+    width: 80%;
+    margin: 20px 0;
+    justify-content: space-between;
+}
+
+.FooterSection{
+    display: flex;
+    flex-direction: column;     
+}
+
+.FooterSection span{
+    margin-top: 5px;
+    font-size: 0.9rem;
+    margin-right: 10px;
+    
+}
+
+.FooterSection a {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.FooterSection h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}

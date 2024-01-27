@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Urbanist', sans-serif;
+
+}
+
+body{
+    background-color: var(--color1);
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+  }
+  
+
+:root{
+    --color1:rgb(245, 245, 245);
+    --color2:rgb(158, 169, 63);
+    --color3:rgb(84, 84, 84);
+    --color4:rgb(243, 146, 55);
+    --color5:rgb(163, 144, 228);
+    
+}
+

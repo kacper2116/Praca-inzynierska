@@ -1,0 +1,34 @@
+.Container{
+    display: flex;
+    flex-direction: column;
+ 
+    margin-bottom: 50px;
+    width: 90%;
+    padding: 0 5%;
+    padding-top: 1%;
+}
+.SectionTitle{
+    color: black;
+    margin: 2rem 0;
+}
+
+.Products{
+
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    gap:2rem 0rem;
+    min-height: 50vh;
+}
+
+.noProductsFound{
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem;
+
+}
+

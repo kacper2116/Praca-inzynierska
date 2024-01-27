@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Styl dla kontenera kafelków */
+    .tile-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    /* Styl dla pojedynczego kafelka produktu */
+    .product-tile {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+
+    /* Styl dla obrazka produktu w kafelku */
+    .product-image {
+      width: 100%; /* Ustawienie szerokości na 100% */
+      height: 300px; /* Stała wysokość */
+      object-fit: cover; /* Dostosowanie obrazka do wymiarów */
+    }
+
+    /* Styl dla tytułu produktu w kafelku */
+    .product-title {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    /* Styl dla ceny produktu w kafelku */
+    .product-price {
+      font-size: 14px;
+      color: green;
+      margin-top: 5px;
+    }
+  </style>
+  <title>Product Display</title>
+</head>
+<body>
+
+  <!-- Kontener kafelków -->
+  <div class="tile-container">
+    <!-- Kafelki produktów -->
+    <div class="product-tile">
+      <!-- Obrazek produktu -->
+      <img class="product-image" src="https://upload.wikimedia.org/wikipedia/en/0/0c/Witcher_3_cover_art.jpg" alt="Nazwa produktu">
+
+      <!-- Tytuł produktu -->
+      <div class="product-title">
+        Nazwa Produktu 1
+      </div>
+
+      <!-- Cena produktu -->
+      <div class="product-price">
+        $29.99
+      </div>
+    </div>
+
+    <!-- Powielaj ten kafelek dla kolejnych produktów -->
+
+    <div class="product-tile">
+      <!-- Obrazek produktu -->
+      <img class="product-image" src="https://www.tabletowo.pl/wp-content/uploads/2023/08/baldurs-gate-3-grafika-min.jpg" alt="Nazwa produktu">
+
+      <!-- Tytuł produktu -->
+      <div class="product-title">
+        Nazwa Produktu 2
+      </div>
+
+      <!-- Cena produktu -->
+      <div class="product-price">
+        $39.99
+      </div>
+    </div>
+
+
+
+    <div class="product-tile">
+      <!-- Obrazek produktu -->
+      <img class="product-image" src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e1/Spider-Man_PS4_cover.jpg/220px-Spider-Man_PS4_cover.jpg" alt="Nazwa produktu">
+
+      <!-- Tytuł produktu -->
+      <div class="product-title">
+        Nazwa Produktu 2
+      </div>
+
+      <!-- Cena produktu -->
+      <div class="product-price">
+        $39.99
+      </div>
+    </div>
+
+    <div class="product-tile">
+      <!-- Obrazek produktu -->
+      <img class="product-image" src="https://www.tabletowo.pl/wp-content/uploads/2023/08/baldurs-gate-3-grafika-min.jpg" alt="Nazwa produktu">
+
+      <!-- Tytuł produktu -->
+      <div class="product-title">
+        Nazwa Produktu 2
+      </div>
+
+      <!-- Cena produktu -->
+      <div class="product-price">
+        $39.99
+      </div>
+    </div>
+
+    <div class="product-tile">
+      <!-- Obrazek produktu -->
+      <img class="product-image" src="https://www.tabletowo.pl/wp-content/uploads/2023/08/baldurs-gate-3-grafika-min.jpg" alt="Nazwa produktu">
+
+      <!-- Tytuł produktu -->
+      <div class="product-title">
+        Nazwa Produktu 2
+      </div>
+
+      <!-- Cena produktu -->
+      <div class="product-price">
+        $39.99
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

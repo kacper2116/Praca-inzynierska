@@ -1,0 +1,62 @@
+.Container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    margin-bottom: 40px;
+}
+
+.Slide{
+    box-shadow: 0px 0px 7px #666;
+    width: 100%;
+    height: 100%;
+
+}
+
+.HiddenSlide{
+    display: none;
+}
+
+
+
+.Arrow{
+    position: absolute;
+    color: white;
+    cursor: pointer;
+    font-size: 56px;
+}
+
+.LeftArrow{
+    left: 1rem;
+}
+
+.RightArrow{
+    right: 1rem;
+}
+
+.Dots{
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+}
+
+.Dot{
+    background-color: white;
+    height: 0.7rem;
+    width: 0.7rem;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 5px #555;
+    margin: 0 0.3rem;
+    cursor: pointer;
+}
+
+.InactiveDot{
+    background-color: gray;
+}
+
+
+

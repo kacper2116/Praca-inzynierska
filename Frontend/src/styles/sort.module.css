@@ -1,0 +1,32 @@
+.Container{
+    display: flex;
+    align-items: center;
+    width: 50%;   
+}
+
+.Select{
+    width: 40%;
+}
+
+.Container label{
+    margin-right:1rem ;
+}
+
+.ResetFilters{
+
+    height: 100%;
+    padding: 0 1rem;
+    cursor: pointer;
+    background-color: var(--color2);
+    border: 0.1rem solid var(--color1);
+    border-radius: 0.2rem;
+    font-weight: 500;
+
+    margin-left: 5rem;
+    
+    &:hover{
+        color: var(--color1);
+        border: 0.1rem solid var(--color4)
+    }
+ 
+}
