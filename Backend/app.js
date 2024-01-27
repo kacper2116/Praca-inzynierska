@@ -111,7 +111,7 @@ const addProduct = async() => {
     await newProduct.save()
 }
 
-addProduct()
+//addProduct()
 
 
 
