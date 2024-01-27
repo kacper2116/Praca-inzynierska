@@ -5,7 +5,7 @@ const jwt = require('jsonwebtoken');
 
 const passport = require('../passport');
 const { generateToken, authenticateToken } = require('./authMiddleware');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const saltRounds = 10;
 
 
