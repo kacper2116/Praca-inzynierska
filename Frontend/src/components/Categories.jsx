@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import styles from '../styles/categories.module.css'
 
 import { userRequest } from '../requestMethods'
-import { Link } from '@material-ui/core'
 import { Navigate, useNavigate } from 'react-router-dom'
 
 
